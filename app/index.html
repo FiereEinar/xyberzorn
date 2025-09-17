@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XyberZorn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMate - To Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi, we are the xyberzorn betches. We love yall hoes, wenches, and bitches (not the bad ones).</h1>
-    <details>I love people ahihihihihii</details>
-    <br>
-    <h1>Hi, we are the xyberzorn betches. We love yall hoes, wenches, and bitches (not the bad ones).</h1>
-    
+  <header>
+    <h1>TaskMate ✅</h1>
+  </header>
+
+  <main>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <input type="date" id="taskDate">
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="pending" class="filter-btn">Pending</button>
+      <button data-filter="completed" class="filter-btn">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
